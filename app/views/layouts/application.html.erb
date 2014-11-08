@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Testing</title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body >
+		<div class="wrapper">
+			<div class="slider">
+				<p>ganesh</p>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">show</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class=main>
+				<%= yield %>
+			</div>
+			<div class="footer">
+				 all right reserved by Grepruby.com
+			</div>
+		</div>
+	</body>
+</html>
